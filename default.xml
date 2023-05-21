@@ -9,6 +9,10 @@
     <remote name="github"
             fetch="https://github.com" />
 
+    <remote name="sb-github"
+	    fetch="https://github.com/stormbreaker-project"
+	    revision="android-12.1" />
+
     <!-- Defaults -->
     <default revision="master-kernel-build-2021"
 	     remote="aosp"
