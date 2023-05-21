@@ -3,6 +3,9 @@
   <remote  name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
 
+    <remote name="github"
+            fetch="https://github.com" />
+
   <superproject name="kernel/superproject" remote="aosp"/>
 
   <project path="build" name="kernel/build" />
