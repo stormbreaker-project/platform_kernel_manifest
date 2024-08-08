@@ -22,7 +22,8 @@
 
     <project path="build" name="kernel/build" />
     <project path="common" name="linux-oneplus-billie" remote="sb-github">
-        <linkfile src="build.config.billie" dest="build.config" />
+        <linkfile dest="build.config" src="build.config.billie"/>
+        <linkfile dest="build_billie.sh" src="build_billie.sh"/>
     </project>
     <project path="kernel/tests" name="kernel/tests" />
     <project path="kernel/configs" name="kernel/configs" />
@@ -30,6 +31,8 @@
     <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" clone-depth="1" />
     <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
     <project path="prebuilts-master/misc" name="platform/prebuilts/misc" clone-depth="1" />
+    <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" clone-depth="1" />
+    <project path="prebuilts/boot-artifacts" name="platform/prebuilts/boot-artifacts" clone-depth="1" />
     <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
     <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" />
 </manifest>
