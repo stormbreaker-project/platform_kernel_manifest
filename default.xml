@@ -21,7 +21,7 @@
     <superproject name="kernel/superproject" remote="aosp" revision="common-android-4.19-stable" />
 
     <project path="build" name="kernel/build" />
-    <project path="common" name="linux-oneplus-billie" remote="sb-github">
+    <project path="private/msm-oneplus" name="linux-oneplus-billie" remote="sb-github">
         <linkfile dest="build.config" src="build.config.billie"/>
         <linkfile dest="build_billie.sh" src="build_billie.sh"/>
     </project>
@@ -29,6 +29,8 @@
     <project path="kernel/configs" name="kernel/configs" />
     <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android-4.19-stable" />
     <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" clone-depth="1" />
+    <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" clone-depth="1" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" />
     <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
     <project path="prebuilts-master/misc" name="platform/prebuilts/misc" clone-depth="1" />
     <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" clone-depth="1" />
